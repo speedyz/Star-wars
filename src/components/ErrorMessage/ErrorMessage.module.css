@@ -1,0 +1,13 @@
+.error__text{
+    width: 600px;
+    margin: 100px auto auto;
+    line-height:1.7;
+    color: yellow;
+    font-size: var(--font-size-header);
+    text-align: center;
+    text-shadow: 0 0 21px yellow;
+
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-fill-color: transparent;
+}
