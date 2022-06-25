@@ -10,7 +10,7 @@ const getID = (url: string, category: string) => {
 
 export const getPeopleID = (url: string) => getID(url, PEOPLE)
 
-export const getPeopleImage = (id: number)  => `${URL_IMG_PERSON}/${id+GUIDE_IMG_EXTENSION}`;
+export const getPeopleImage = (id: string | undefined)  => `${URL_IMG_PERSON}/${id+GUIDE_IMG_EXTENSION}`;
 
 export const getPeoplePageID = (url: any) =>{
     const position = url.lastIndexOf(PARAM_PAGE)

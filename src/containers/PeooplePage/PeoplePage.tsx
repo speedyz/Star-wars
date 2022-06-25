@@ -30,7 +30,7 @@ const PeoplePage = ({setErrorAPI}: Props) => {
         if (body) {
             const peopleList = body.results.map(({name, url}: Props) => {
                 const id = getPeopleID(url)
-                const img = getPeopleImage(Number(id));
+                const img = getPeopleImage(id);
                 return {
                     id,
                     img,

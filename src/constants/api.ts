@@ -6,6 +6,7 @@ export const SWAPI = 'swapi.dev/api/'
 export const PEOPLE = 'people'
 export const PARAM_PAGE = '/?page='
 export const API_PEOPLE = HTTPS+SWAPI + PEOPLE+PARAM_PAGE;
+export const API_PERSON = HTTPS+SWAPI +PEOPLE;
 
 // visual guide
 const GUIDE_IMAGE = 'https://starwars-visualguide.com/assets/img/'

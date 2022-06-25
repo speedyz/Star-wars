@@ -1,7 +1,7 @@
 import HomePage from "../containers/HomePage";
 import PeoplePage from "../containers/PeooplePage/PeoplePage";
-import React, {Component} from 'react';
 import PageNotFound from "../containers/PageNotFound";
+import PersonPage from "../containers/PersonPage";
 
 const routesConfig = [
     {
@@ -11,6 +11,10 @@ const routesConfig = [
     {
         path: '/people',
         element: <PeoplePage/>
+    },
+    {
+        path: '/people/:id',
+        element: <PersonPage/>
     },
     {
         path: "*",

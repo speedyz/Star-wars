@@ -22,7 +22,7 @@ const PeopleNavigation = ({getResource, prevPage, nextPage, counterPage}: Props)
     return (
         <div className={styles.root}>
             <Link className={styles.link} to={`/people/?page=${counterPage - 1}`}>
-                <UiButton text="Previous" onClick={handeChangePrev} disabled={!prevPage} theme="light" classes=""/>
+                <UiButton text="Previous" onClick={handeChangePrev} disabled={!prevPage} theme="dark" classes=""/>
             </Link>
             <Link className={styles.link} to={`/people/?page=${counterPage + 1}`}>
                 <UiButton text="Next" onClick={handeChangeNext} disabled={!nextPage} theme="dark" classes=""/>

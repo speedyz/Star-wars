@@ -12,16 +12,14 @@ type Props = {
     classes: string,
 }
 
-const UiButton = ({text, onClick, disabled, theme='dark',classes}: Props) => {
-    return (
+const UiButton = ({text, onClick, disabled, theme='dark'}: Props) =>  (
         <button
             onClick={onClick}
             disabled={disabled}
-            className={cn(styles.button, styles[theme], classes)}>
+            className={cn(styles.button, styles[theme])}>
             {text}
-            {onClick}
         </button>
     );
-};
+
 
 export default UiButton;
