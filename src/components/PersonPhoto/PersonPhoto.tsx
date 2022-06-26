@@ -1,9 +1,16 @@
 import React from 'react';
+import styles from './PersonPhoto.module.css'
 
-const PersonPhoto = () => {
+type Props ={
+    personPhoto: string,
+    personName: string,
+}
+
+const PersonPhoto = ({personPhoto, personName}: Props) => {
     return (
-        <div>
-            PersonPhoto
+        <div className={styles.container}>
+            <img  className={styles.photo} src={personPhoto} alt={personName}/>
+
         </div>
     );
 };

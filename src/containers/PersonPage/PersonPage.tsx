@@ -5,6 +5,8 @@ import {API_PERSON} from "../../constants/api";
 import {withErrorApi} from "../../hoc/withErrorApi";
 import {useParams} from 'react-router';
 import {getPeopleImage} from "../../services/getPeopleData";
+import PersonInfo from "../../components/PersonInfo";
+import PersonPhoto from "../../components/PersonPhoto";
 
 type Props = {
     setErrorAPI: any,
@@ -44,23 +46,14 @@ const PersonPage = ({setErrorAPI}: Props) => {
     }, []);
 
     return (
-        <div className={styles.h1}>
-            <h1>{personName}</h1>
-            <img src={personPhoto} alt={personPhoto}/>
-            {personInfo && (
-                <ul>
-                    {personInfo.map(({title, data}: Props) => (
-                        data && (
-                            <li key={title}>
-                                <span>
-                                    {title}: {data}
-                                </span>
-                            </li>
-                        )
-
-                    ))}
-                </ul>
-            )}
+        <div className={styles.wrapper}>
+            <span className={styles.person__name}>{personName}</span>
+            <div className={styles.container}>
+                <PersonPhoto personPhoto={personPhoto} personName={personName}/>
+                {personInfo && (
+                    <PersonInfo personInfo={personInfo} data="" title=""/>
+                )}
+            </div>
         </div>
     );
 };
