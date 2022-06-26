@@ -12,6 +12,7 @@
     --spacing-medium: 20px;
     --spacing-large: 30px;
 
+    --margin-list: 7px;
     --width-max: 1220px;
 
     --border-radius-small: 3px;
@@ -25,7 +26,9 @@
 
     --text-shadow-yellow: 0 0 2px var(--color-white),
     0 0 40px var(--color-blue);
-
+    --text-shadpw-blue:
+    0 0 2px var(--color-white),
+    0 0 40px var(--color-blue);
     --theme-default-header: #cccc46;
     --theme-default-background:  url("./static/images/bg.jpg")
 
