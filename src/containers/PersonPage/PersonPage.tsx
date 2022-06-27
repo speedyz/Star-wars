@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, Suspense} from 'react';
 import styles from './PersonPage.module.css'
 import {getApiResource} from "../../utils/network";
 import {API_PERSON} from "../../constants/api";
@@ -8,6 +8,9 @@ import {getPeopleImage} from "../../services/getPeopleData";
 import PersonInfo from "../../components/PersonPage/PersonInfo";
 import PersonPhoto from "../../components/PersonPage/PersonPhoto";
 import PersonLinkBack from "../../components/PersonPage/PersonLinkBack";
+import UiLoading from "../../components/UI/UiLoading";
+
+const PersonFilms = React.lazy(() => import("../../components/PeoplePage/PersonFilms"));
 
 type Props = {
     setErrorAPI: any,
@@ -57,6 +60,11 @@ const PersonPage = ({setErrorAPI}: Props) => {
                     <PersonPhoto personPhoto={personPhoto} personName={personName}/>
                     {personInfo && (
                         <PersonInfo personInfo={personInfo} data="" title=""/>
+                    )}
+                    {personFilms && (
+                        <Suspense fallback={<UiLoading theme=""/>}>
+                            <PersonFilms personFilms={personFilms} episode_id="" title=""/>
+                        </Suspense>
                     )}
                 </div>
             </div>

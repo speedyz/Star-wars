@@ -5,9 +5,11 @@
     --color-blue: #6a83fb;
     --color-yellow: #ffff00;
     --color-purple: #ae72c2;
+    --color-green: #FF5C8D;
 
     --transition: .4s;
 
+    --spacing-ultrasmall: 5px;
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 30px;
@@ -24,11 +26,12 @@
     --font-size-subheader: 18px;
     --font-size-header: 26px;
 
-    --text-shadow-yellow: 0 0 2px var(--color-white),
+    --text-shadow-yellow: 0 0 2px var(--color-yellow),
     0 0 40px var(--color-blue);
     --text-shadpw-blue:
     0 0 2px var(--color-white),
     0 0 40px var(--color-blue);
+
     --theme-default-header: #cccc46;
     --theme-default-background:  url("./static/images/bg.jpg")
 
