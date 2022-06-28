@@ -9,6 +9,7 @@ import PersonInfo from "../../components/PersonPage/PersonInfo";
 import PersonPhoto from "../../components/PersonPage/PersonPhoto";
 import PersonLinkBack from "../../components/PersonPage/PersonLinkBack";
 import UiLoading from "../../components/UI/UiLoading";
+import {useSelector} from "react-redux";
 
 const PersonFilms = React.lazy(() => import("../../components/PeoplePage/PersonFilms"));
 
@@ -29,9 +30,13 @@ const PersonPage = ({setErrorAPI}: Props) => {
     const [personFilms, setPersonFilms] = useState<any>(null);
     const [personFavorite, setPersonFavorite] = useState<any>(false);
 
+    const storeData = useSelector(state => state)
+
     useEffect(() => {
         (async () => {
             const res = await getApiResource(`${API_PERSON}/${id}/`)
+            storeData ? setPersonFavorite(true) : setPersonFavorite(false)
+            setPersonId(id)
             if (res) {
                 setPersonInfo([
                     {title: 'Height', data: res.height},
@@ -57,7 +62,13 @@ const PersonPage = ({setErrorAPI}: Props) => {
             <div className={styles.wrapper}>
                 <span className={styles.person__name}>{personName}</span>
                 <div className={styles.container}>
-                    <PersonPhoto personPhoto={personPhoto} personName={personName}/>
+                    <PersonPhoto
+                        personId={personId}
+                        personPhoto={personPhoto}
+                        personName={personName}
+                        personFavorite={personFavorite}
+                        setPersonFavorite={setPersonFavorite}
+                    />
                     {personInfo && (
                         <PersonInfo personInfo={personInfo} data="" title=""/>
                     )}
