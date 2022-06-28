@@ -30,12 +30,14 @@ const PersonPage = ({setErrorAPI}: Props) => {
     const [personFilms, setPersonFilms] = useState<any>(null);
     const [personFavorite, setPersonFavorite] = useState<any>(false);
 
-    const storeData = useSelector(state => state)
+    // @ts-ignore
+    const storeData = useSelector(state => state.favoriteReducer);
 
     useEffect(() => {
         (async () => {
             const res = await getApiResource(`${API_PERSON}/${id}/`)
-            storeData ? setPersonFavorite(true) : setPersonFavorite(false)
+            setPersonFavorite(!!storeData[id]);
+            setPersonId(id);
             setPersonId(id)
             if (res) {
                 setPersonInfo([

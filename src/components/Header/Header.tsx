@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
-import {inspect} from "util";
 import styles from './Header.module.css'
+import Favorite from "../Favorite";
 
 const Header = () => {
     return (
@@ -9,9 +9,8 @@ const Header = () => {
             <ul className={styles.list__container}>
                 <li><NavLink to="/">Home </NavLink></li>
                 <li><NavLink to="/people/?page=1">People</NavLink></li>
-                <li><NavLink to="/favorites">Favorites</NavLink></li>
             </ul>
-
+            <Favorite/>
         </div>
     );
 };
