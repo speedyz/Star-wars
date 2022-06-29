@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import loader_white from '../../../static/images/loader_white.svg'
-import loader_black from '../../../static/images/loader_black.svg'
-import loader_blue from '../../../static/images/loader_blue.svg'
+import loader_white from '../../../static/Icons/loader_white.svg'
+import loader_black from '../../../static/Icons/loader_black.svg'
+import loader_blue from '../../../static/Icons/loader_blue.svg'
 
 import styles from './UiLoading.module.css'
 
