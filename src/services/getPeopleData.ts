@@ -1,11 +1,9 @@
-import {HTTPS, PEOPLE, SWAPI, URL_IMG_PERSON, GUIDE_IMG_EXTENSION, PARAM_PAGE} from "../constants/api";
+import {GUIDE_IMG_EXTENSION, HTTPS, PARAM_PAGE, PEOPLE, SWAPI, URL_IMG_PERSON} from "../constants/api";
 
 const getID = (url: string, category: string) => {
-    const id = url
-        .replace(HTTPS+SWAPI+category,'')
-        .replace(/\//g,'')
-
-    return id
+    return url
+        .replace(HTTPS + SWAPI + category, '')
+        .replace(/\//g, '')
 }
 
 export const getPeopleID = (url: string) => getID(url, PEOPLE)

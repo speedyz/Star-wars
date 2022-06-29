@@ -8,6 +8,6 @@
     text-shadow: 0 0 21px yellow;
 
     -webkit-text-stroke-color: yellow;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-fill-color: transparent;
 }

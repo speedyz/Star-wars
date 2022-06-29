@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './PageNotFound.module.css'
-import {useLocation} from "react-router";
 
 const PageNotFound = () => {
     return (
