@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Star-wars/static/css/main.2497323b.css",
+    "main.js": "/Star-wars/static/js/main.d428dea0.js",
+    "static/css/357.cd80bfeb.chunk.css": "/Star-wars/static/css/357.cd80bfeb.chunk.css",
+    "static/js/357.6b979657.chunk.js": "/Star-wars/static/js/357.6b979657.chunk.js",
+    "static/css/57.b0455165.chunk.css": "/Star-wars/static/css/57.b0455165.chunk.css",
+    "static/js/57.fad340d2.chunk.js": "/Star-wars/static/js/57.fad340d2.chunk.js",
+    "static/media/bg_light.jpg": "/Star-wars/static/media/bg_light.3627a14573e5720e3d9c.jpg",
+    "static/media/bg_dark.jpg": "/Star-wars/static/media/bg_dark.9dacfde9551b070fa264.jpg",
+    "static/media/falcon.jpg": "/Star-wars/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/bg_neutral.jpg": "/Star-wars/static/media/bg_neutral.5f74506e98ae4d3143d1.jpg",
+    "static/media/dark-side.jpg": "/Star-wars/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/Star-wars/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/droid.png": "/Star-wars/static/media/droid.6366448782cce3108aa9.png",
+    "static/media/sword.png": "/Star-wars/static/media/sword.0c7e77c0958d06b81caa.png",
+    "static/media/station.svg": "/Star-wars/static/media/station.cb00d9be0fa5a974e74d508d2a921d0f.svg",
+    "static/media/bookmark.svg": "/Star-wars/static/media/bookmark.b17a5944e1c73a62ecdd574799ffec7c.svg",
+    "static/media/loader_black.svg": "/Star-wars/static/media/loader_black.77da21ed0d934b56450eb359285f308e.svg",
+    "static/media/loader_blue.svg": "/Star-wars/static/media/loader_blue.f4bfe3312d6f6da854c379e90c0b29fa.svg",
+    "static/media/loader_white.svg": "/Star-wars/static/media/loader_white.93afd496471b856097f3197dde95aca9.svg",
+    "static/media/icon_left.svg": "/Star-wars/static/media/icon_left.66939c7eece148cccda979fabc4bda6f.svg",
+    "index.html": "/Star-wars/index.html",
+    "static/media/favoriteIconFill.svg": "/Star-wars/static/media/favoriteIconFill.8582175d0c92b03e22618f3f21191e5a.svg",
+    "static/media/favoriteIcon.svg": "/Star-wars/static/media/favoriteIcon.c853f00013a9f92b67d755e26a5b6e29.svg",
+    "main.2497323b.css.map": "/Star-wars/static/css/main.2497323b.css.map",
+    "main.d428dea0.js.map": "/Star-wars/static/js/main.d428dea0.js.map",
+    "357.cd80bfeb.chunk.css.map": "/Star-wars/static/css/357.cd80bfeb.chunk.css.map",
+    "357.6b979657.chunk.js.map": "/Star-wars/static/js/357.6b979657.chunk.js.map",
+    "57.b0455165.chunk.css.map": "/Star-wars/static/css/57.b0455165.chunk.css.map",
+    "57.fad340d2.chunk.js.map": "/Star-wars/static/js/57.fad340d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2497323b.css",
+    "static/js/main.d428dea0.js"
+  ]
+}
