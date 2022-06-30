@@ -34,9 +34,20 @@
 .light {
     border: 1px solid var(--color-black);
     color: var(--color-black);
+    background-color: var(--color-white)
 }
 
 .light:hover {
     color: var(--color-white);
     background-color: var(--color-black);
+}
+.neutral {
+    border: 1px solid var(--color-black);
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.neutral:hover {
+    color: var(--color-black);
+    background-color: var(--color-white);
 }

@@ -17,7 +17,7 @@ type Props = {
 }
 const ChooseSideItem = ({classes, theme, text, img}: Props) => {
     const isTheme = useTheme();
-
+    console.log(isTheme)
     return (
         <div
             className={cn(styles.item, classes)}

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import styles from './Header.module.css'
 import Favorite from "../Favorite";
 import droid from '../../static/Icons/droid.png'
@@ -10,6 +10,7 @@ import {THEME_DARK, THEME_LIGHTS, THEME_NEUTRAL, useTheme} from "../../context/T
 const Header = () => {
     const isTheme = useTheme();
     const [icon, setIcon] = useState(droid);
+
     useEffect(() => {
         switch (isTheme.theme) {
             case THEME_LIGHTS:
@@ -27,7 +28,8 @@ const Header = () => {
     }, [isTheme]);
     return (
         <div className={styles.container}>
-            <img className={styles.logo} src={icon} alt="logo"/>
+            <Link to={"/"}> <img className={styles.logo} src={icon} alt="logo"/>
+            </Link>
             <ul className={styles.list__container}>
                 <li><NavLink to="/">Home </NavLink></li>
                 <li><NavLink to="/people/?page=1">Characters</NavLink></li>
